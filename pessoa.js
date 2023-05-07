@@ -1,3 +1,5 @@
+const rl = require("readline-sync")
+
 const pessoa = { //exercício 1 letra A
     nome: 'Marcelo',
     apelidos: ["celo", " gordinho", " marcelão"]
@@ -14,3 +16,6 @@ const novaPessoa = { //Exercício 1 letra B
 console.log(`Eu sou o ${pessoa.nome}, 
             mas também pode me chamar de ${novaPessoa.apelidos}!!!`)
 
+let apelidoLegal = rl.question("Qual você mais gostou???")
+
+console.log(`O apelido que você mais gostou foi ${apelidoLegal}.`)
